@@ -13,9 +13,8 @@ body{
     background-color:#e6dbcc;
     display: flex;
     flex: 1;
-    flex-direction: row;
+    flex-direction: row-reverse;
     flex-wrap: nowrap;
-    justify-content: right;
     padding: 10px;
 }
 
