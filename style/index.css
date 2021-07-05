@@ -116,7 +116,7 @@ body{
     }
 
     .header-container-links{
-        justify-content: left;
+        flex-direction: row;
     }
 
     .social-media-logo{
@@ -152,7 +152,7 @@ body{
     }
 
     .header-container-links{
-        justify-content: left;
+        flex-direction: row;
     }
 
     .social-media-logo{
