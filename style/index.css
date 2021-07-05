@@ -1,9 +1,10 @@
 body{
-    background-color: rgb(255, 247, 235);
+    background-color: #f5efe5;
+    font-family: monospace;
 }
 
 #main-container{
-    background-color: indigo;
+    background-color: #f5efe5;
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -12,7 +13,7 @@ body{
     padding: 50px;
 }
 #image-name-container{
-    background-color: green;
+    background-color: #f5efe5;
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -22,12 +23,16 @@ body{
 }
 
 #image-name-container > img, h2{
-    background-color: hotpink;
-    padding: 10px;
+    background-color: #f5efe5;
+    padding: 5px;
     /*justify-content: center;*/
 }
+
+#tittle-name{
+    font-size: 250%;
+}
 #secondary-container{
-    background-color: blue;
+    background-color: #f5efe5;
     display: flex;
     flex: 1;
     flex-direction: row;
@@ -36,23 +41,44 @@ body{
     padding: 15px;
 }
 
-#secondary-container > div{
+.main-buttons{
     padding: 75px;
-    background-color: brown;
+    /*border-style: groove;*/
+    border-color: #e6dbcc;
+    background-color: #f5efe5;
     justify-content: center;
+    font-size: xx-large;
+}
+
+.main-buttons:hover{
+    background-color: #e6dbcc;
 }
 
 #header-container-links{
-    background-color:lightblue;
+    background-color:#e6dbcc;
     display: flex;
     flex: 1;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: right;
-    padding: 15px;
+    padding: 10px;
 }
 #header-container-links > div{
-    padding: 10px;
-    background-color: lawngreen;
+    padding: 5px;
+    background-color: #f5efe5;
     justify-content: center;
+}
+
+#main-image{
+    border-radius: 50%;
+    border: solid;
+    border-color:#e6dbcc;
+}
+
+.footer-container{
+    background-color: #e6dbcc;
+}
+
+.social-media-logo{
+    padding: 5px;
 }
