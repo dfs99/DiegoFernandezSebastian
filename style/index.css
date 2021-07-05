@@ -3,6 +3,32 @@ body{
     font-family: monospace;
 }
 
+/*
+    =================================
+    ============ HEADER =============
+    =================================
+*/
+
+.header-container-links{
+    background-color:#e6dbcc;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: right;
+    padding: 10px;
+}
+
+.social-media-logo{
+    padding: 5px;
+}
+
+/*
+    =================================
+    ============= BODY ==============
+    =================================
+*/
+
 #main-container{
     background-color: #f5efe5;
     display: flex;
@@ -12,6 +38,7 @@ body{
     justify-content: center;
     padding: 50px;
 }
+
 #image-name-container{
     background-color: #f5efe5;
     display: flex;
@@ -19,18 +46,21 @@ body{
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    /*justify-content: space-evenly;*/
 }
 
-#image-name-container > img, h2{
-    background-color: #f5efe5;
-    padding: 5px;
-    /*justify-content: center;*/
-}
-
-#tittle-name{
+.tittle-name{
     font-size: 250%;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
 }
+
+#main-image{
+    border-radius: 50%;
+    border: solid;
+    border-color:#e6dbcc;
+}
+
 #secondary-container{
     background-color: #f5efe5;
     display: flex;
@@ -48,37 +78,97 @@ body{
     background-color: #f5efe5;
     justify-content: center;
     font-size: xx-large;
+    text-align: center;
 }
 
 .main-buttons:hover{
     background-color: #e6dbcc;
 }
 
-#header-container-links{
-    background-color:#e6dbcc;
-    display: flex;
-    flex: 1;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: right;
-    padding: 10px;
-}
-#header-container-links > div{
-    padding: 5px;
-    background-color: #f5efe5;
-    justify-content: center;
-}
 
-#main-image{
-    border-radius: 50%;
-    border: solid;
-    border-color:#e6dbcc;
-}
+/*
+    =================================
+    ============ FOOTER =============
+    =================================
+*/
 
 .footer-container{
     background-color: #e6dbcc;
+    height: 50px;
+    width: 100%;
 }
 
-.social-media-logo{
-    padding: 5px;
+
+/*
+    =================================
+    ======= PHONE RESPONSIVE ========
+    =================================
+*/
+
+@media screen and (max-width: 600px) { 
+    #secondary-container{
+        background-color: #f5efe5;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    .header-container-links{
+        justify-content: left;
+    }
+
+    .social-media-logo{
+        display: none;
+    }
+
+    .burger-menu{
+        background-color: #c0b19b;
+        padding: 5px;
+    }
+
+    .bar{
+        width: 35px;
+        height: 5px;
+        background-color: #e6dbcc;
+        margin: 6px;
+    }
+}
+/*
+    =================================
+    ====== TABLET RESPONSIVE ========
+    =================================
+*/
+@media screen and (max-width: 768px) {
+    #secondary-container{
+        background-color: #f5efe5;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    .header-container-links{
+        justify-content: left;
+    }
+
+    .social-media-logo{
+        display: none;
+    }
+
+    .burger-menu{
+        background-color: #c0b19b;
+        padding: 5px;
+    }
+
+    .bar{
+        width: 35px;
+        height: 5px;
+        background-color: #e6dbcc;
+        margin: 6px;
+    }
 }
