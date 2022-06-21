@@ -1,20 +1,23 @@
 body{
-    background-color: #f5efe5;
+    background-color: #2c2a27; /* f5efe5 */
     font-family: monospace;
+    color: #fae100;
 }
 
 /*
     =================================
     ============ HEADER =============
     =================================
+    todo: no está siendo usado de momento en el main.
 */
 
 .header-container-links{
-    background-color:#e6dbcc;
+    background-color:#dee2f3;
     display: flex;
     flex: 1;
     flex-direction: row-reverse;
     flex-wrap: nowrap;
+    justify-content: center;
     padding: 10px;
 }
 
@@ -29,7 +32,7 @@ body{
 */
 
 #main-container{
-    background-color: #f5efe5;
+    background-color: #2c2a27;
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -39,7 +42,7 @@ body{
 }
 
 #image-name-container{
-    background-color: #f5efe5;
+    background-color: #2c2a27;
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -57,42 +60,74 @@ body{
 #main-image{
     border-radius: 50%;
     border: solid;
-    border-color:#e6dbcc;
+    border-color:#57524b;
 }
 
 #secondary-container{
-    background-color: #f5efe5;
+    background-color: #2c2a27;
     display: flex;
     flex: 1;
     flex-direction: row;
+    gap: 50px;
     flex-wrap: nowrap;
     justify-content: center;
     padding: 15px;
 }
 
-.main-buttons{
-    padding: 75px;
-    /*border-style: groove;*/
-    border-color: #e6dbcc;
-    background-color: #f5efe5;
+.custom-button{
+    padding: 35px;
+    border: none;
+    background-color: #1d1a17;
     justify-content: center;
     font-size: xx-large;
     text-align: center;
+    text-decoration: none;
+    color: #fae100;
+    border-radius: 5px;
+    
 }
 
-.main-buttons:hover{
-    background-color: #e6dbcc;
+.custom-button:hover{
+    background-color: #363330;
+    color: #f7f0b0;
 }
 
+/*
+    css para projects.
+
+*/
+
+#projects-container{
+    background-color: #2c2a27;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex: 1;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.project-button{
+    border: none;
+    background-color: #1d1a17;
+    justify-content: center;
+    font-size: xx-large;
+    text-align: center;
+    text-decoration: none;
+    color: #fae100;
+}
 
 /*
     =================================
     ============ FOOTER =============
     =================================
+    todo: no usado de momento.
 */
 
 .footer-container{
-    background-color: #e6dbcc;
+    background-color: #2c2a27;
     height: 50px;
     width: 100%;
 }
@@ -102,6 +137,7 @@ body{
     =================================
     ======= PHONE RESPONSIVE ========
     =================================
+    todo: revisar
 */
 
 @media screen and (max-width: 600px) { 
